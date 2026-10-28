@@ -5,14 +5,14 @@ export default function Home() {
   let[count,setcount]=useState("");
   let[coun,setcoun]=useState(false);
 let increment =()=>{
-let con = ++count;
-if(!count==0)
+let con = Number(count) + 1;
+if (count !== "")
 setcount(con);
 }
 let decrement =()=>{
-  if (!count ==""){
+  if (count !== ""){
 
-    let con = --count;
+    let con = Number(count) - 1;
     setcount(con);
   }
 }
@@ -21,8 +21,8 @@ let decrement =()=>{
   if(coun){
    
     setTimeout(()=>{
-      let con = ++count;
-if(!count==0)
+      let con = Number(count) + 1;
+if(count !== "")
 setcount(con);
 
 

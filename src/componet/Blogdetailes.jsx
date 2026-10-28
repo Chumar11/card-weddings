@@ -8,8 +8,15 @@ function Blogdetails() {
 
   const { id } = useParams();
 
- let data = blogs.filter((v)=>v.id==id)[0];
- console.log(data);
+ let data = blogs.find((v)=>String(v.id) === String(id));
+ if (!data) {
+   return (
+     <div>
+       <Header />
+       <h1>Blog not found</h1>
+     </div>
+   );
+ }
   return (
     <div>
       <Header />

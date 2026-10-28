@@ -79,15 +79,6 @@ export default function Cart() {
 }
 
 function Product ({pro1,addtocart}) {
-    let addcart=(event)=>{
-        let elements = document.querySelectorAll('.t1');
-        elements.forEach((element, index) => {
-            element.addEventListener('click', (event) => {
-              let indexNo = index; 
-           
-            });
-          });
-    }
     return (
       <div>
       <div className='t1'>

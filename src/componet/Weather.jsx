@@ -51,7 +51,7 @@ export default function Weather() {
         </div>
     </div>
      <div className="showw">
-{(p=="")
+{(p === "")
 ?(
     <h1>No data</h1>
 ):(

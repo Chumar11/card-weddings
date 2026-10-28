@@ -22,7 +22,7 @@ useEffect(()=>{
 
 let catee=cate.slice(0,9).map((res)=>{
   return(
-    <ul>
+    <ul key={res}>
       <li className='r12' onClick={()=>{
         setname(res);
         setclas(!clas);
@@ -32,7 +32,7 @@ let catee=cate.slice(0,9).map((res)=>{
   )
 })
 useEffect(()=>{
-  if(name!==""){
+  if(name !== ""){
     setload(true);
     axios.get(`https://dummyjson.com/products/category/${name}`)
     .then((res)=>res.data)
