@@ -1,0 +1,4 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body, #root { min-height: 100%; }
+body { margin: 0; background: #fffaf6; -webkit-font-smoothing: antialiased; }
+::selection { color: white; background: #771f37; }
