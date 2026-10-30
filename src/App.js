@@ -7,7 +7,7 @@ const copy = {
   en: {
     language: 'Urdu', open: 'Tap to open', invitation: 'You are invited',
     welcome: 'We are honoured to welcome you to the wedding ceremony of',
-    son: 'The Groom · Imam Imran Butt', daughter: 'The Bride · Aneeqa Nabeel Butt',
+    son: 'The Groom · Inam Imran Butt', daughter: 'The Bride · Aneeqa Nabeel Butt',
     scroll: 'Scroll to discover', story: 'Two hearts, one promise',
     storyText: 'With joyful hearts and the blessings of our families, we invite you to celebrate the beginning of our forever.',
     forever: 'Our forever begins', invited: "You're invited", date: 'November 14, 2026',
@@ -463,7 +463,7 @@ function App() {
         <div className="cover-grain" />
         <OpeningFireworks active={opening} />
         <button className="cover-language" onClick={() => setLanguage(language === 'en' ? 'ur' : 'en')}>{t.language}</button>
-        <div className="cover-copy"><span className="cover-kicker">Aneeqa &amp; Imam</span><span className="cover-date">14 · 11 · 2026</span></div>
+        <div className="cover-copy"><span className="cover-kicker">Aneeqa &amp; Inam</span><span className="cover-date">14 · 11 · 2026</span></div>
         <button className="envelope-button" onClick={handleOpen} aria-label={t.open}>
           <span className="envelope-shadow" /><span className="envelope-back" />
           <span className="letter-card"><span className="letter-monogram">A <i>&amp;</i> I</span><span>{t.invitation}</span></span>
@@ -488,14 +488,14 @@ function App() {
         <div className="petals" aria-hidden="true">{Array.from({ length: 10 }, (_, index) => <i key={index} />)}</div>
         <div className="hero-content">
           <p className="eyebrow">{t.welcome}</p><div className="heart-mark">♥</div>
-          <h1><span>Aneeqa</span><em>&amp;</em><span>Imam</span></h1>
+          <h1><span>Aneeqa</span><em>&amp;</em><span>Inam</span></h1>
           <div className="family-grid"><p>{t.son}</p><i>— ♥ —</i><p>{t.daughter}</p></div>
           <a href="#story" className="scroll-cue"><span>{t.scroll}</span><i>⌄</i></a>
         </div>
       </section>
 
       <section id="story" className="story-section paper-section">
-        <div className="ornament reveal">❦</div><p className="section-kicker reveal">Aneeqa &amp; Imam</p>
+        <div className="ornament reveal">❦</div><p className="section-kicker reveal">Aneeqa &amp; Inam</p>
         <h2 className="script-heading reveal">{t.story}</h2><p className="story-copy reveal">{t.storyText}</p>
         <div className="signature reveal">A <span>&amp;</span> I</div>
       </section>
@@ -529,7 +529,7 @@ function App() {
 
       <section className="venue-section"><div className="venue-content reveal"><p className="section-kicker">14 · 11 · 2026</p>
         <h2 className="script-heading">{t.venue}</h2><strong>{t.venueText}</strong><p>{t.venueSub}</p>
-        <a href="https://www.google.com/maps/search/?api=1&query=Garrison+Golf+and+Country+Club+Saddar+Town+Lahore" target="_blank" rel="noreferrer">View location <span>↗</span></a>
+        <a href="https://maps.app.goo.gl/UtX5t439SmsrC13y5?g_st=aw" target="_blank" rel="noreferrer">View location <span>↗</span></a>
       </div></section>
 
       <section className="rsvp-section paper-section"><div className="rsvp-card reveal"><div className="section-icon">✉</div>
